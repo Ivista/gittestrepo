@@ -12,6 +12,7 @@ pipeline {
                     short_commitId = commitId.substring(0, 9)
                 }
                 echo 'Building..'
+                echo 'Full commit ID: ${commitId}'
             }
         }
         stage('Test') {
