@@ -13,6 +13,7 @@ pipeline {
                 }
                 echo 'Building..'
                 echo "Full commit ID: ${commitId}"
+                echo "Short commit ID: ${short_commitId}"
             }
         }
         stage('Test') {
